@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>webii web || programming hack</title>
+</head>
+<body>
+        <div class="logo">
+            <p>webii web hack</p>
+        </div>
+        <div class="menu-items" id="res-mob">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">service</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+        </div>
+
+        <div class="mob-hamburger">
+            <span class="ham-lineopen" id="ham-line" onclick="openham()">&#9776;</span>
+            <span class="ham-lineclose" id="ham-close" onclick="closeham()">&times;</span>
+        </div>
+
+        <script>
+
+            var menu = document.getElementById('res-mob');
+            var open = document.getElementById('ham-line');
+            var close = document.getElementById('ham-close');
+
+            function openham(){
+                open.style.display ="none";
+                close.style.display ="block";
+                menu.style.width ="40vw";
+            }
+            function closeham(){
+                open.style.display ="block";
+                close.style.display ="none";
+                menu.style.width ="0px";
+            }
+
+        </script>
+
+
+</body>
+</html>
